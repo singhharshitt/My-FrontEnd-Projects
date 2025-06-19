@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Google</title>
+  <link href="src/styles.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <style>
+    i {
+      font-size: 24px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-900 flex justify-center min-h-screen">
+  <header class="fixed px-4 w-full">
+    <nav class="flex justify-between items-center w-full px-4 py-2">
+      <!-- LEFT SIDE -->
+      <div class="flex items-center gap-4">
+        <a href="https://rb.gy/imnz4l" target="_blank" class="text-white text-sm hover:underline">About</a>
+        <a href="https://rb.gy/imnz4l" target="_blank" class="text-white text-sm hover:underline">Store</a>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="flex items-center gap-4">
+        <a href="https://mail.google.com/mail/&ogbl" target="_blank" class="text-white text-sm hover:underline">Gmail</a>
+        <a href="https://www.google.com/imghp?hl=en&ogb" target="_blank" class="text-white text-sm pr-2 hover:underline">Images</a>
+        <a href="https://labs.google.com/search?source=hp" target="_blank">
+          <i class="fa-solid fa-flask text-white p-2 rounded-full hover:bg-gray-700 transition duration-200 cursor-pointer" style="font-size: 18px"></i>
+        </a>
+        <a href="https://www.google.co.in/intl/en/about/products" target="_blank">
+          <i class="fa-solid fa-grip text-white text-xs p-2 rounded-full hover:bg-gray-700 transition duration-200 cursor-pointer" style="font-size: 18px"></i>
+        </a>
+        <a href="https://accounts.google.com/SignOutOptions?hl=en&continue=https://www.google.com/webhp&ec=futura_exp_og_si_72776762_e" target="_blank">
+          <img src="googleAssets/google-logo-icon-illustration-free-vector.jpg" class="w-8 h-8 rounded-full hover:bg-gray-700 transition duration-200 cursor-pointer" alt="Profile" />
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="flex flex-col items-center justify-center w-full min-h-screen px-4">
+    <div class="mb-8">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Google_logo_%282013-2015%29.svg" alt="Google Logo"
+        class="w-96 sm:w-64 md:w-64" />
+    </div>
+
+    <!-- Search Bar -->
+    <form class="w-full max-w-xl mb-12" action="https://www.google.com/search" method="GET">
+      <div class="flex items-center bg-gray-700 h-12 rounded-full px-4">
+        <!-- Left Icon -->
+        <i class="fa-solid fa-magnifying-glass text-gray-300 mr-4" style="font-size: 15px;"></i>
+        <input type="text" name="q" placeholder="Search Google or type a URL"
+          class="flex-grow bg-transparent text-white outline-none placeholder-gray-300" />
+        <!-- Right Icons -->
+        <a href="https://www.google.com/webhp">
+          <i class="fa-solid fa-microphone text-gray-300 mr-4 pr-0.25" style="font-size: 18px;"></i>
+        </a>
+        <a href="https://www.google.com/webhp">
+          <i class="fa-solid fa-camera text-gray-300 pl-0.25" style="font-size: 18px;"></i>
+        </a>
+      </div>
+
+      <!-- Buttons -->
+      <div class="mt-10 flex justify-center mr-40">
+        <button id="gsearch" type="submit" class="text-white bg-gray-700 rounded-sm p-1.25 ml-30 hover:border-2 border-white">
+          Google Search
+        </button>
+        <button id="lucky" type="button" class="text-white bg-gray-700 rounded-sm p-1.5 ml-8 hover:border-2 border-white" onclick="window.location.href='https://doodles.google/';">
+          Let's Doodle
+        </button>
+      </div>
+
+      <!-- Languages -->
+      <div class="mt-10 flex justify-center mr-40 gap-1">
+        <h3 class="text-white text-sm">Google offered in: </h3>
+        <a class="text-blue-400 hover:underline text-xs" href="https://l1nk.dev/nNkZW">Hindi</a>
+        <a class="text-blue-400 hover:underline text-xs" href="https://acesse.one/rMgGG">Tamil</a>
+        <a class="text-blue-400 hover:underline text-xs" href="https://acesse.one/b0rsD">Bangla</a>
+        <a class="text-blue-400 hover:underline text-xs" href="https://l1nk.dev/MzZr9">Marathi</a>
+        <a class="text-blue-400 hover:underline text-xs" href="https://l1nk.dev/sjHnR">Gujrati</a>
+      </div>
+    </form>
+  </main>
+</body>
+</html>
